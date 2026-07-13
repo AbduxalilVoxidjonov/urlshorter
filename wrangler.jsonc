@@ -1,6 +1,6 @@
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
-	"name": "snip-sh",
+	"name": "urlshorter",
 	"main": "worker/index.js",
 	"compatibility_date": "2025-06-01",
 	// Serves the built React app (dist/) as static assets. The Worker runs for any
