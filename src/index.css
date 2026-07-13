@@ -116,6 +116,9 @@ header.nav {
 /* ---------- hero ---------- */
 .hero { padding: 92px 0 70px; }
 .hero-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: 56px; align-items: center; }
+/* Let grid columns shrink below their content so long URLs truncate instead of
+   stretching the layout off to the right. */
+.hero-grid > * { min-width: 0; }
 .eyebrow {
   font-family: var(--font-mono); font-size: 13px; color: var(--accent);
   display: inline-flex; align-items: center; gap: 9px; margin-bottom: 22px;
