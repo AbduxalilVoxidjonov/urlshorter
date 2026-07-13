@@ -130,7 +130,7 @@ export default function ShortenWidget() {
           <div className="result-card">
             {result.withQr && (
               <div className="result-qr" ref={qrRef}>
-                <Qr text={result.shortUrl} size={120} />
+                <Qr text={result.shortUrl} size={96} />
               </div>
             )}
             <div className="result-main">
