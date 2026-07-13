@@ -1,26 +1,24 @@
 {
-  "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "snip-sh",
-  "main": "worker/index.js",
-  "compatibility_date": "2025-06-01",
-
-  // Serves the built React app (dist/) as static assets. The Worker runs for any
-  // path that is NOT a built file — that is where /:slug redirects and /api/* live.
-  "assets": {
-    "binding": "ASSETS"
-  },
-
-  // Key-value store: slug -> { url, createdAt }. Perfect for a redirect hot path,
-  // globally cached at the edge. In `npm run dev` this is emulated locally, so you
-  // do NOT need a real id to develop. Fill the id in before `npm run deploy`.
-  "kv_namespaces": [
-    {
-      "binding": "LINKS",
-      "id": "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
-    }
-  ],
-
-  "observability": {
-    "enabled": true
-  }
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "snip-sh",
+	"main": "worker/index.js",
+	"compatibility_date": "2025-06-01",
+	// Serves the built React app (dist/) as static assets. The Worker runs for any
+	// path that is NOT a built file — that is where /:slug redirects and /api/* live.
+	"assets": {
+		"binding": "ASSETS"
+	},
+	// Key-value store: slug -> { url, createdAt }. Perfect for a redirect hot path,
+	// globally cached at the edge. In `npm run dev` this is emulated locally, so you
+	// do NOT need a real id to develop. Fill the id in before `npm run deploy`.
+	"kv_namespaces": [
+		{
+			"binding": "LINKS",
+			"id": "5e7b0ab604fa42cfa94fbcb409ef68f2",
+			"remote": true
+		}
+	],
+	"observability": {
+		"enabled": true
+	}
 }
