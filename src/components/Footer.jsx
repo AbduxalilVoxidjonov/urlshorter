@@ -46,8 +46,12 @@ export default function Footer() {
         <div className="foot-bottom">
           <span>© {new Date().getFullYear()} snip.sh — no rights reserved, go make links.</span>
           <div className="socials">
-            <a>GitHub</a>
-            <a>X / Twitter</a>
+            <a href="https://github.com/AbduxalilVoxidjonov" target="_blank" rel="noreferrer">
+              GitHub
+            </a>
+            <a href="https://github.com/AbduxalilVoxidjonov/urlshorter" target="_blank" rel="noreferrer">
+              Repository
+            </a>
           </div>
         </div>
       </div>
