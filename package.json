@@ -1,0 +1,25 @@
+{
+  "name": "snip-sh",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "snip.sh — a sign-in-less URL shortener with QR codes on Cloudflare Workers + KV",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "vite build && wrangler deploy",
+    "kv:create": "wrangler kv namespace create LINKS"
+  },
+  "dependencies": {
+    "qrcode": "^1.5.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "^1.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^6.0.7",
+    "wrangler": "^4.0.0"
+  }
+}
